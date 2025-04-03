@@ -11,21 +11,10 @@ footer {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
 }
 
-main img {
-    max-width: 100%;
-    height: auto;
-}
 
-main p {
-    font-size: 20px;
-}
 
 /* For Mobile Phones */
 @media (max-width: 600px) {
