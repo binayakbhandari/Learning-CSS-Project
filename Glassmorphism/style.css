@@ -1,0 +1,85 @@
+header {
+    font-size: 24px;
+    text-align: center;
+    color: rgb(30, 54, 30);
+    background-color: rgb(182, 205, 226);
+    border-radius: 5px;
+}
+
+main {
+    background-image: url('./background.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* .glass-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+} */
+
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);  /* Adding a subtle border */
+    font-family: 'Arial', sans-serif;
+  }
+
+
+
+footer {
+    margin-top: 40px;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* For Mobile Phones */
+@media (max-width: 600px) {
+    header h1{
+        font-size: 18px;
+    }
+    .glass-card {
+        width: 80%;
+        padding: 20px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+/* For Tablets */
+@media (max-width: 768px) {
+    header h1{ 
+        font-size: 20px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+/* For Small Laptops */
+@media (max-width: 1024px) {
+    header h1{
+        font-size: 22px;
+    }
+    footer p {
+        font-size: 15px;
+    }
+}
