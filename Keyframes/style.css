@@ -15,7 +15,37 @@ main {
     border: 1px solid black;
 }
 
+/* @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    background: tomato;
+    border-radius: 100%;
+    animation: bounce 1s ease-in-out infinite;
+  } */
 
+  @keyframes coolMove {
+    0% {
+      transform: scale(1) rotate(0deg);
+      background-color: red;
+    }
+    100% {
+      transform: scale(1.5) rotate(360deg);
+      background-color: blue;
+    }
+  }
+
+  .box {
+    width: 50px;
+    height: 50px;
+    /* background-color: tomato; */
+    animation: coolMove 2s ease-in-out 0.5s infinite alternate ;
+  }
   
 
 footer {
