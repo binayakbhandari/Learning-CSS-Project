@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super CSS Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes floatUp {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-20px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .profile-card {
+                padding: 1rem;
+            }
+
+            button {
+                padding: 0.3rem 0.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="m-0 font-sans bg-[#1e1e2f] text-white min-h-screen flex justify-center items-center">
+
+    <div class="container p-8 text-center w-full max-w-[1200px] mx-auto">
+        <h1 class="mb-24 text-3xl">Profile Card Using HTML & CSS</h1>
+        <div class="grid-container grid grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))] gap-[8rem] w-full">
+            <!-- Profile Card 1 -->
+            <div
+                class="profile-card bg-[rgba(255,_255,_255,_0.1)] backdrop-blur-[15px] rounded-[20px] p-6 relative overflow-hidden cursor-pointer transition-transform duration-[0.3s] hover:scale-105 hover:shadow-[0_0_40px_#3498db] animate-[floatUp_2s_ease-in-out_infinite_alternate]">
+                <div
+                    class="profile-image w-[100px] h-[100px] bg-[url('./bikram.png')] bg-center bg-cover rounded-full mx-auto mb-4">
+                </div>
+                <h2>Bikram Gyawali</h2>
+                <p>Backend Developer</p>
+                <a href="https://www.facebook.com/bikram.gyawali.529334" target="_blank">
+                    <button
+                        class="bg-[#3498db] border-none py-2 px-4 text-white rounded-[10px] cursor-pointer transition-colors duration-[0.3s] hover:bg-[#1abc9c]">Follow</button>
+                </a>
+            </div>
+
+            <!-- Profile Card 2 -->
+            <div
+                class="profile-card bg-[rgba(255,_255,_255,_0.1)] backdrop-blur-[15px] rounded-[20px] p-6 relative overflow-hidden cursor-pointer transition-transform duration-[0.3s] hover:scale-105 hover:shadow-[0_0_40px_#3498db] animate-[floatUp_2s_ease-in-out_infinite_alternate]">
+                <div
+                    class="profile-image w-[100px] h-[100px] bg-[url('./profile.png')] bg-center bg-cover rounded-full mx-auto mb-4">
+                </div>
+                <h2>Binayak Bhandari</h2>
+                <p>Frontend Developer</p>
+                <a href="https://facebook.com/binayakbhandari.np" target="_blank">
+                    <button
+                        class="bg-[#3498db] border-none py-2 px-4 text-white rounded-[10px] cursor-pointer transition-colors duration-[0.3s] hover:bg-[#1abc9c]">Follow</button>
+                </a>
+            </div>
+
+            <!-- Profile Card 3 -->
+            <div
+                class="profile-card bg-[rgba(255,_255,_255,_0.1)] backdrop-blur-[15px] rounded-[20px] p-6 relative overflow-hidden cursor-pointer transition-transform duration-[0.3s] hover:scale-105 hover:shadow-[0_0_40px_#3498db] animate-[floatUp_2s_ease-in-out_infinite_alternate]">
+                <div
+                    class="profile-image w-[100px] h-[100px] bg-[url('./saroj.png')] bg-center bg-cover rounded-full mx-auto mb-4">
+                </div>
+                <h2>Saroj Dhakal</h2>
+                <p>UI/UX Designer</p>
+                <a href="https://www.facebook.com/saroj.com.np" target="_blank">
+                    <button
+                        class="bg-[#3498db] border-none py-2 px-4 text-white rounded-[10px] cursor-pointer transition-colors duration-[0.3s] hover:bg-[#1abc9c]">Follow</button>
+                </a>
+            </div>
+
+            <!-- Additional Profile Cards can be added here -->
+        </div>
+    </div>
+
+</body>
+
+</html>

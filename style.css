@@ -1,0 +1,19 @@
+.my-btn {
+    background-color: royalblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .my-btn:hover {
+    background-color: dodgerblue;
+  }
+  
+  .my-btn:active {
+    transform: scale(0.95);
+    background-color: navy;
+  }
+  
